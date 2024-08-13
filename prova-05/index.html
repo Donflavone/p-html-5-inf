@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>CLÍNICA MAIS SAÚDE</h1>
+        <h2>FORMULÁRIO DO PACIENTE</h2>
+        <h3>Por Favor insira seus dados pessoais abaixo:</h3>
+    </header>
+    <main>
+
+        <form action="/cadastro" method="post">
+
+            <div class="informacao-pessoal">
+                <label for="campo-nome">Nome:</label>
+                <input type="text" id="campo-nome" required><br>
+                <label for="campo-email">E-mail:</label>
+                <input type="email" name="E-mail" id="campo-email" required><br>
+                <label for="data-de-nascimento">Data de Nascimento:</label>
+                <input type="date" name="Data de nascimento" id="data-de-nascimento" required><br>
+            </div>
+            <div class="informacao-cadastro">
+                <p>Já realizou exames de rotina na clínica MAIS SAÚDE ? ?</p>
+                <label for="paciente-cadastrado">Sim, já realizei</label>
+                <input type="radio" name="paciente" id="paciente-cadastrado" value="0"><br>
+                <label for="paciente-nao-cadastrado">Não, primeira vez</label>
+                <input type="radio" name="paciente" id="paciente-nao-cadastrado" value="0">
+            </div>
+            <div class="informacao-rotina">
+                <p>Selecione abaixo se pratica algum ou alguns dos hábitos a seguir:</p>
+                <label for="fumante">fuma ?</label>
+                <input type="checkbox" name="fumante" id="fumante"><br>
+                <label for="consumidor-de-alcool">bebe ?</label>
+                <input type="checkbox" name="consumidor-de-alcool" id="consumidor-de-alcool"><br>
+                <label for="esportista">pratica esportes ?</label>
+                <input type="checkbox" name="esportista" id="esportista"><br>
+                <label for="sexualmente-ativo">sexualmente átivo ?</label>
+                <input type="checkbox" name="sexualmente-ativo" id="sexualmente-ativo"><br>
+                <label for="doador-de-sangue">doa sangue ?</label>
+                <input type="checkbox" name="doador-de-sangue" id="doador-de-sangue"><br>
+            </div>
+            <div class="informacao-genero">
+                <p>Por favor insira abaixo o genêro com o qual se identifica: </p>
+                <label for="campo-feminino">Feminino:</label>
+                <input type="radio" name="genero" id="campo-feminino" value="0"><br>
+                <label for="campo-masculino">Masculino:</label>
+                <input type="radio" name="genero" id="campo-masculino" value="0"><br>
+                <label for="campo-outros">Outros:</label>
+                <input type="radio" name="genero" id="campo-outros" value="0"><br>
+            </div>
+            <div class="informacao-complementar">
+                <p>Nos conte um pouco sobre a sua rotina de alimentação e de exercicios:</p>
+                <label for="area-de-texto"></label>
+                <textarea name="area-de-texto" id="area-de-texto" rows="5" cols="33" required
+                    placeholder="É obrigatório preencher este campo"></textarea><br>
+            </div>
+            <div class="button"> 
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
